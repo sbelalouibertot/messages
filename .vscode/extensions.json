@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "stevencl.adddoccomments",
+        "steoates.autoimport",
+        "aaron-bond.better-comments",
+        "coenraads.bracket-pair-colorizer",
+        "dbaeumer.vscode-eslint",
+        "waderyan.gitblame",
+        "esbenp.prettier-vscode",
+        "jpoissonnier.vscode-styled-components",
+        "wix.vscode-import-cost"
+    ]
+}

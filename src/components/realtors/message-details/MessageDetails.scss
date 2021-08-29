@@ -1,0 +1,130 @@
+@import "../../../App/App.scss";
+
+.message-details-wrapper {
+  --message-details-contact-height: 120px;
+  --message-blocks-margin: 25px;
+
+  height: 100%;
+  flex: 1;
+
+  @include flex($center: true, $dir: row);
+  background-color: var(--message-details-background-color);
+
+  @media screen and (max-width: 799px) {
+    position: absolute;
+    z-index: 1;
+  }
+
+  h5 {
+    font-weight: 100;
+  }
+
+  .message-details-contact,
+  .message-details-content {
+    background-color: white;
+    border-radius: 2px;
+    animation: fadein 0.3s;
+  }
+
+  .message-details-name {
+    font-weight: bold;
+  }
+
+  .message-details-contact-attributes,
+  .message-details-content-date,
+  p {
+    color: var(--message-details-body-color);
+  }
+
+  .message-details-contact {
+    --contact-header-height: 45px;
+    height: var(--message-details-contact-height);
+    width: 100%;
+    margin: var(--message-blocks-margin);
+    box-sizing: border-box;
+
+    h4,
+    h5 {
+      margin: 0px !important;
+    }
+    .message-details-contact-header {
+      @include flex($dir: row);
+      height: var(--contact-header-height);
+
+      .message-details-contact-icon {
+        height: 100%;
+        svg {
+          height: 100%;
+        }
+        &.read {
+          opacity: 0.6;
+        }
+        width: 55px;
+      }
+    }
+
+    .message-details-contact-information {
+      @include flex($dir: row);
+      height: calc(100% - var(--contact-header-height));
+      justify-content: space-between;
+
+      @media screen and (min-width: 800px) {
+        width: 300px;
+        margin-left: 55px;
+      }
+      @media screen and (max-width: 799px) {
+        width: 265px;
+        margin-left: 5%;
+      }
+
+      .message-details-contact-attributes {
+        @include flex($dir: column);
+        align-items: flex-start;
+      }
+
+      .message-details-contact-data {
+        @include flex($dir: column);
+        align-items: flex-start;
+        color: var(--app-primary-color);
+
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .message-details-content {
+    height: calc(
+      100% - var(--message-details-contact-height) - 3 *
+        var(--message-blocks-margin)
+    );
+    width: 100%;
+    margin: 0px var(--message-blocks-margin) var(--message-blocks-margin)
+      var(--message-blocks-margin);
+    padding: 25px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .message-details-content-metadata {
+      height: 70px;
+    }
+    p {
+      text-align: justify;
+      font-size: 15px;
+    }
+    .return-button {
+      background-color: var(--app-primary-color);
+      color: white;
+      border: 1px solid grey;
+      border-radius: 10px;
+      height: 24px;
+      width: 62px;
+      margin-top: 25px;
+    }
+  }
+}

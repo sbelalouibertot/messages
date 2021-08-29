@@ -1,0 +1,51 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "plugins": ["react"],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "printWidth": 120,
+                "arrowParens": "always",
+                "semi": false,
+                "tabWidth": 4,
+                "singleQuote": true,
+                "jsxSingleQuote": true,
+                "trailingComma": "es5",
+                "jsxBracketSameLine": true,
+                "endOfLine": "auto",
+                "bracketSpacing": true
+            }
+        ],
+        "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+        "react/prop-types": 0,
+        "no-await-in-loop": 2,
+        "no-promise-executor-return": 2,
+        "no-template-curly-in-string": 2,
+        "no-unreachable-loop": 2,
+        "default-case-last": 2,
+        "default-param-last": 2,
+        "eqeqeq": 2,
+        "no-else-return": 2,
+        "no-empty-function": 2,
+        "no-multi-str": 2,
+        "no-return-await": 2,
+        "no-unused-expressions": 2,
+        "radix": 2,
+        "require-await": 2
+    }
+}
