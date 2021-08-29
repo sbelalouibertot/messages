@@ -4,7 +4,7 @@
 
 This project was initially a technical test.
 After releasing my test, I had a discussion with my reviewer and decided to add some modifications, to perfect it.
-I developped all the front-end part, which communicates with a back-end api (available in the /backend folder, I did not developped it. Please see other projects like [this one](https://github.com/sbelalouibertot/friends-backend) if you want an overview of my back-end skills).
+I developped all the front-end part, which communicates with a back-end api (available in the /backend folder, I did not developped it. Endpoint details are available at the end of this readme file. Please see other projects like [this one](https://github.com/sbelalouibertot/friends-backend) if you want an overview of my back-end skills).
 It is now a side project.
 
 The goal is to develop a messages-reader app. The messages are related to realtors.
@@ -177,3 +177,20 @@ Also, few attributes have been added to index.html, in order to take into accoun
 ### VS Code extensions
 
 Please see recommanded extensions in your extensions tab, loaded from .vscode/extensions.json
+
+## API endpoints 
+- Realtor list
+  - `curl http://localhost:8080/realtors`
+
+- Realtor details
+  - `curl http://localhost:8080/realtors/101`
+
+- Realtor messages list
+
+  - `curl http://localhost:8080/realtors/101/messages`
+  - `curl http://localhost:8080/realtors/101/messages?page=2`
+  - `curl http://localhost:8080/realtors/101/messages?page=2&page_size=20`
+  - `curl http://localhost:8080/realtors/101/messages?page=2&page_size=20&sort=date,desc`
+
+- Single message details
+  - `curl http://localhost:8080/realtors/101/messages/1001`
