@@ -83,7 +83,7 @@ The project is composed of 3 main components :
 Logic is separated from view.
 
 
-### Styles 👁️
+## Styles 👁️
 
 Graphic elements are managed with SASS preprocessor and SCSS. It is responsive for wide & small screens. The responsive style is applied for a screen width < 800px. Global variables and mixins are defined in the App.scss file.
 
@@ -92,7 +92,7 @@ Graphic elements are managed with SASS preprocessor and SCSS. It is responsive f
 I created a return button for going back to the messages list.
 
 
-## Redux
+## Redux ⚛️
 
 Redux is used to manage actions & data persistency.
 There are 3 main reducers :
@@ -103,8 +103,14 @@ There are 3 main reducers :
 
 ![Reducers](https://user-images.githubusercontent.com/79903008/131255347-7cd08248-a2a6-4a4a-82e6-f7c2b7f54719.png)
 
+## Routing strategy 🔀
 
-## Unit & functional tests
+
+I used [React Router](https://reactrouter.com/web/guides/quick-start).
+
+
+
+## Unit & functional tests ✔️
 
 Tests have been coded with Jest and are available in the `__tests__` folder.
 

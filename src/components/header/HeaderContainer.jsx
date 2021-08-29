@@ -30,7 +30,7 @@ const HeaderContainer = () => {
   }, [currentSelectedRealtorData?.id, userUpdated]);
 
   const onRealtorSelectChange = (e) => {
-    history.push(`/realtors/${e.target.value}/messages`);
+    history.push(`/realtors/${e.target.value}`);
     dispatch(updateRealtor(e.target.value));
   };
 
