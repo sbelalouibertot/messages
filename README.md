@@ -105,9 +105,8 @@ There are 3 main reducers :
 
 ## Routing strategy 🔀
 
-
 I used [React Router](https://reactrouter.com/web/guides/quick-start).
-
+![RealtorsAppContainer](https://user-images.githubusercontent.com/79903008/131258248-3b074aa8-bb03-4b16-80d7-9b98ec86fb46.png)
 
 
 ## Unit & functional tests ✔️
