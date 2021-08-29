@@ -105,7 +105,8 @@ There are 3 main reducers :
 
 ## Routing strategy 🔀
 
-I used [React Router](https://reactrouter.com/web/guides/quick-start).
+I used [React Router](https://reactrouter.com/web/guides/quick-start). You can see below a simplified chart, including main components, actions and related urls. Urls changes during navigation are made with the <Link /> element when possible, either with history.push().
+To differenciate a manual url change from an automatic change (user click), I compare the action type (push, replace or pop) of history and process my redux actions differently.
 ![RealtorsAppContainer](https://user-images.githubusercontent.com/79903008/131258248-3b074aa8-bb03-4b16-80d7-9b98ec86fb46.png)
 
 
